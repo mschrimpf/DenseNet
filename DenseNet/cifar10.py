@@ -1,17 +1,16 @@
 from __future__ import print_function
 
+import numpy as np
 import os.path
+import sklearn.metrics as metrics
+from keras import backend as K
+from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
+from keras.datasets import cifar10
+from keras.optimizers import Adam
+from keras.preprocessing.image import ImageDataGenerator
+from keras.utils import np_utils
 
 import densenet
-import numpy as np
-import sklearn.metrics as metrics
-
-from keras.datasets import cifar10
-from keras.utils import np_utils
-from keras.preprocessing.image import ImageDataGenerator
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
-from keras import backend as K
 
 batch_size = 100
 nb_classes = 10

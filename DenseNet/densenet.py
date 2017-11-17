@@ -170,7 +170,7 @@ def DenseNet(input_shape=None, depth=40, nb_dense_block=3, growth_rate=12, nb_fi
     else:
         inputs = img_input
     # Create model.
-    model = Model(inputs, x, name='densenet')
+    model = Model(inputs, x, name='DenseNet')
 
     # load weights
     if weights == 'imagenet':
@@ -356,7 +356,7 @@ def DenseNetFCN(input_shape, nb_dense_block=5, growth_rate=16, nb_layers_per_blo
     else:
         inputs = img_input
     # Create model.
-    model = Model(inputs, x, name='fcn-densenet')
+    model = Model(inputs, x, name='fcn-DenseNet')
 
     return model
 

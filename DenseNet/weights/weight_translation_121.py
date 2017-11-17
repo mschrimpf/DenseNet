@@ -57,7 +57,7 @@ count_layers += len(bn_weights)
 
 print('Copying %d weights. (%d layers)' % (count_layers, count_layers // 2))
 
-import densenet
+from DenseNet import densenet
 
 model = densenet.DenseNetImageNet121((224, 224, 3), weights=None)
 

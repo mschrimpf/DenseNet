@@ -3,7 +3,7 @@ from __future__ import absolute_import
 
 from keras.preprocessing import image
 
-from densenet import DenseNetImageNet121, DenseNetImageNet169, DenseNetImageNet161, preprocess_input, decode_predictions
+from DenseNet import DenseNetImageNet121, DenseNetImageNet169, DenseNetImageNet161, preprocess_input, decode_predictions
 
 import numpy as np
 
